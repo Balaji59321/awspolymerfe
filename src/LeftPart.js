@@ -44,7 +44,8 @@ const LeftPart = (props) => {
 
   useEffect(() => {
     const getData = async () => {
-      const resp = await axios.get("https://aws-polymer-clone.herokuapp.com/data/find");
+      
+      const resp = await axios.get("https://aws-polymer-be.onrender.com/data/find");
       await setApiData(resp.data);
     }
     getData();
